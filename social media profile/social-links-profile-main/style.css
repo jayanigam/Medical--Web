@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #131313;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  background-image: #313131;
+}
+.profile-card {
+  flex-direction: column;
+  align-items: center;
+  width: 20.4375em;
+  height: 38.188em;
+  background-color: #202020;
+  border-radius: 0.5em;
+  border: 2px solid #ffffff41;
+}
+img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin-top: 2.6em;
+}
+/* group background color */
+.profile-name,
+.Location,
+.role,
+.btn-container {
+  background-color: #202020;
+}
+
+/* Flex Containers */
+body,
+.profile-card,
+.btn-container {
+  display: flex;
+}
+
+/* Grouped Font Colors */
+
+a,
+.role,
+.attribution {
+  color: white;
+}
+
+.profile-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffffc0;
+  margin-top: 1.1em;
+}
+
+.Location {
+  font-size: 0.8125rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: hsl(75, 93%, 56%);
+  margin-top: 0.75em;
+}
+.role {
+  font-weight: 200;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+.btn-container {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 17.4375em;
+  height: 18.0625em;
+  margin-top: 1.875em;
+}
+a {
+  text-decoration: none;
+}
+
+.button {
+  width: 279px;
+  height: 45px;
+  background-color: #333333;
+  color: #ffffffc7;
+  border-radius: 0.5em;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.9375em 0 0.9375em 0;
+  border: 2px solid #ffffff18;
+}
+
+.attribution {
+  margin-top: 1.875em;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.attribution,
+a {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 480px) {
+  /* Hover transitions */
+
+  .buttons:hover {
+    background-color: #c4f82a;
+    color: #141414;
+    transition-duration: 1.5s;
+    border-radius: 1.75em;
+  }
+
+  .profile-card {
+    width: 24em;
+    height: 38.188em;
+  }
+}
